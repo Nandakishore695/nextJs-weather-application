@@ -1,10 +1,12 @@
 import { useEffect, useState, useRef } from "react";
 import { FiWind } from "react-icons/fi";
 import { BsWater } from "react-icons/bs";
+import Image from 'next/image';
+import githubIcon from "../../public/github-icon.svg";
 
 export default function Home() {
   const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
-  const inputRef  = useRef(null);
+  const inputRef = useRef(null);
   const [cityName, setCityName] = useState("");
   const [isLatitude, setLatitude] = useState(null);
   const [isLongitude, setLongitude] = useState(null);
@@ -62,6 +64,9 @@ export default function Home() {
 
   return (
     <main className="text-center mt-8 text-white ">
+      <header>
+        <a href="https://nandakishore695.github.io/nextjs-counter-application"><Image src={githubIcon} alt="gitHub Nandakishore695" width={70} className="float-right"/></a>
+      </header>
       <h1 className="capitalize text-6xl mt-12 text-white drop-shadow-xl">weather app</h1>
       <div className="m-8">
         <div className="flex justify-center m-8 items-center">
@@ -85,7 +90,7 @@ export default function Home() {
               <p className="">{weatherObject.main?.humidity + "%"} </p>
             </div>
             <div className="flex items-center">
-              <FiWind size={30}/>
+              <FiWind size={30} />
               <p className="">
                 {weatherObject.wind?.speed + "km/h"}  </p>
             </div>
