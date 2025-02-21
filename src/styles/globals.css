@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: url("../../public/weather-bg.jpg");
   --foreground: #171717;
 }
 
@@ -17,5 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
 }
