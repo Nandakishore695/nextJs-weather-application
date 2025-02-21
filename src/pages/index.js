@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <main className="text-center mt-8 text-white ">
       <header>
-        <a href="https://nandakishore695.github.io/nextjs-counter-application"><Image src={githubIcon} alt="gitHub Nandakishore695" width={70} className="float-right"/></a>
+        <a href="https://github.com/Nandakishore695/nextJs-weather-application"><Image src={githubIcon} alt="gitHub Nandakishore695" width={70} className="float-right"/></a>
       </header>
       <h1 className="capitalize text-6xl mt-12 text-white drop-shadow-xl">weather app</h1>
       <div className="m-8">
